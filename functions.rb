@@ -23,6 +23,7 @@ module Parser_nmap_function
     $db.execute "insert into HOSTS values(#{$startTime},'#{$timeEnd}',?,'#{$statusOfHosts}',
     '#{$portsSumm}','#{$ipAddressOfHost}','noHostNameYet','#{$macAddressOfHost}',0)"
   end
+  
   #ports table
   def insert_into_ports_table obj
       obj.each do |obj1|                             #getting information about ports state
